@@ -4,7 +4,7 @@ import {DateTimePicker as ReactWidgetsDateTimePicker} from 'react-widgets';
 import { getDateLocalizer } from 'redux-autoform-utils';
 import FormGroup from '../common/FormGroup';
 import Moment from 'moment';
-import momentLocalizer from 'react-widgets/lib/localizers/moment';
+import momentLocalizer from 'react-widgets-moment';
 
 momentLocalizer(Moment);
 
