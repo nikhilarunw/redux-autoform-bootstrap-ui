@@ -1,17 +1,18 @@
-import React, { Component, PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import FormGroup from '../common/FormGroup';
 
 class FieldGroup extends Component {
     static propTypes = {
-        value: React.PropTypes.any,
-        onChange: React.PropTypes.func.isRequired,
-        placeholder: React.PropTypes.string,
-        displayName: React.PropTypes.string,
-        name: React.PropTypes.string.isRequired,
-        error: React.PropTypes.string,
-        addonBefore: React.PropTypes.string,
-        addonAfter: React.PropTypes.string,
-        fieldLayout: React.PropTypes.string
+        value: PropTypes.any,
+        onChange: PropTypes.func.isRequired,
+        placeholder: PropTypes.string,
+        displayName: PropTypes.string,
+        name: PropTypes.string.isRequired,
+        error: PropTypes.string,
+        addonBefore: PropTypes.string,
+        addonAfter: PropTypes.string,
+        fieldLayout: PropTypes.string
     };
 
     getGroupContent = () => {

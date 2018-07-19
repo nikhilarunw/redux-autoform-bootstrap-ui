@@ -8,7 +8,7 @@ const repoRoot = path.resolve(__dirname, '../');
 const lib = path.join(repoRoot, 'lib');
 const lessSrc = path.join(repoRoot, '/src/styles');
 const lessDest = path.join(lib, '/styles');
-
+console.log(repoRoot);
 console.log('building lib'.green);
 
 rimraf(lib)

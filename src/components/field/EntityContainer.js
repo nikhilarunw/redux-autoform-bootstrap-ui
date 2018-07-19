@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 
 class EntityContainer extends Component {
 
@@ -19,8 +20,8 @@ class EntityContainer extends Component {
     };
 
     _renderComponents = () => {
-        let { componentFactory, layout, fields } = this.props;
-
+        let { componentFactory, layout, fields, disabled } = this.props;
+        fields = fields.map((field)=>({ ...field, disabled}));
         return componentFactory.buildGroupComponent({
             component: layout.component,
             layout: layout,
@@ -60,6 +61,7 @@ EntityContainer.props = {
     visited: PropTypes.bool,
     autofilled: PropTypes.bool,
     required: PropTypes.bool,
+    disabled: PropTypes.bool,
 
     //String props
     group: PropTypes.string,

@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from 'react';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import FormGroup from '../common/FormGroup';
 import Select from 'react-select-plus';
 
@@ -14,7 +15,7 @@ class Lookup extends Component {
     };
 
     render() {
-        let {value, name, displayName, help, error, touched, onChange, onBlur, options, fieldLayout} = this.props;
+        let {value, name, displayName, help, error, touched, onChange, onBlur, options, fieldLayout, disabled} = this.props;
         let formGroupProps = {error, touched, displayName, name, help, fieldLayout};
         let selectProps;
 
@@ -23,6 +24,7 @@ class Lookup extends Component {
                 options,
                 value,
                 name,
+                disabled,
                 onChange,
                 onBlur: (event) => onBlur()
             };

@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import InputGroup from 'react-bootstrap/lib/InputGroup';
 import { FormControl as BootstrapFormControl } from 'react-bootstrap';
 
@@ -24,8 +25,8 @@ class FormControl extends Component {
     };
 
     getInput = () => {
-        let { value, placeholder, componentClass, children, rows, inputType, min, max } = this.props;
-        let formControlProps = { value, placeholder, componentClass, rows, min, max };
+        let { value, placeholder, componentClass, children, rows, inputType, min, max, disabled } = this.props;
+        let formControlProps = { value, placeholder, componentClass, rows, min, max, disabled };
         
         return (
             <BootstrapFormControl type={inputType} ref="input" onChange={this.handleChange} onBlur={this.handleBlur} {...formControlProps}>

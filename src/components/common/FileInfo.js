@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import { Col, Glyphicon, Modal, Button } from 'react-bootstrap';
 import filesize from 'filesize';
 
@@ -106,4 +107,4 @@ export default class FileUploadItem extends Component {
 			</Col>
 		);
 	}
-};
+}

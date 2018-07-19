@@ -1,9 +1,10 @@
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { ControlLabel } from 'react-bootstrap';
 
 class FormGroupInlineControlLabel extends Component {
     static propTypes = {
-        displayName: React.PropTypes.string
+        displayName: PropTypes.string
     };
 
     render() {

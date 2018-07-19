@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from 'react';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import LiveSchemaEditorForm from './LiveSchemaEditorForm';
 import presets from '../../client/presets/presets';
 import _ from 'underscore';

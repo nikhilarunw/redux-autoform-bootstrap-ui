@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import { FormGroup as BootstrapFormGroup } from 'react-bootstrap';
 import HelpBlock from 'react-bootstrap/lib/HelpBlock';
 import ControlLabel from 'react-bootstrap/lib/ControlLabel';

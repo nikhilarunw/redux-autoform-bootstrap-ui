@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from 'react';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import DropZone from '../common/DropZone';
 import GlyphButton from '../common/GlyphButton';
 import FileInfo from '../common/FileInfo';

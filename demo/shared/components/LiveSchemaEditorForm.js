@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from 'react';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import CodeEditor from './CodeEditor';
 import { FormGroup, FormControl, ControlLabel } from 'react-bootstrap';
 import { reduxForm } from 'redux-form';

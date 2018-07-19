@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import HelpBlock from 'react-bootstrap/lib/HelpBlock';
 import Col from 'react-bootstrap/lib/Col';
 

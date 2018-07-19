@@ -1,5 +1,6 @@
 import accepts from 'attr-accept';
-import React, { Component, PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 
 export default class DropZone extends Component {
 	static propTypes = {
